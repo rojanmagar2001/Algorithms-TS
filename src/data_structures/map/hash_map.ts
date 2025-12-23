@@ -14,7 +14,7 @@ import { Map } from "./map";
  * @param loadFactor The load factor to determine when to resize the hash map.
  */
 export class HashMap<K, V> implements Map<K, V> {
-  private size: number;
+  private size!: number;
   private buckets!: MapEntry<K, V>[][];
   private readonly loadFactor = 0.75;
 
